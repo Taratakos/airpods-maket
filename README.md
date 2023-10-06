@@ -1,5 +1,5 @@
 # airpods-maket
-# https://taratakos.github.io/airpods-maket/airpods/
+# https://taratakos.github.io/airpods-maket/
 <!-- # Responsive Airpods Website -->
 <!-- ## [Watch it on youtube](https://www.youtube.com/watch?v=OWJ9jhH50Eo&list=PLN2KCaMlZNdCBrVcXJXEO1iaTkZIMEA7R&index=7) -->
 <!-- ### Responsive Shoe Website -->
