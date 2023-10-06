@@ -1,0 +1,157 @@
+/* Підключаємо шрифт Impact який локально знаходиться в папці fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+/* Задамо правильну блочну модель */
+html {
+  box-sizing: border-box;
+  outline: 2px solid green;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #040404;
+  font-size: 16px;
+  /* коеф 1.2 === 120% , щоб автоматично рахувалось */
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* .big-container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+} */
+
+li {
+  list-style: none;
+}
+
+/* ця картинка не буде більшою за свої фізичні розміри, але при цьому вона можа ставти меншою і ніякого скролу не буде.
+- для того щоб картинка сама по собі зумилась
++ img {
+    object-fit: cover;
+    }
+     */
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* #region Header */
+
+.header {
+  position: relative;
+  min-height: 100vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.header__logo {}
+
+.header__menu {}
+
+.header__content {}
+
+.header-content-block {}
+
+.header-content-block__title {
+  font-size: 210px;
+  font-weight: 700;
+  position: absolute;
+  padding-top: 110px;
+}
+
+.title--pod {
+  position: relative;
+  z-index: -1;
+}
+
+.title--s {
+  display: inline-block;
+  transform: translateY(60px);
+}
+
+.title--m {
+  display: inline-block;
+  transform: translate(-57px, 275px);
+}
+
+.title--ax {
+  display: inline-block;
+  transform: translate(-128px, 413px);
+  position: relative;
+  z-index: -1;
+}
+
+
+.header-content-block__images {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.header-content-block__images::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+  z-index: -2;
+}
+
+
+.menu {}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  font-weight: 700;
+}
+
+.menu__item {}
+
+.menu__link {}
+
+.menu__btn {
+  padding: 15px 58px;
+  border-radius: 30px;
+  background-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #CADBEB;
+}
+
+
+
+/* #endregion Header */
